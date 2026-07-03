@@ -257,44 +257,127 @@ Enhanced the user interface with modern styling and responsive layouts.
 - Consistent Theme Across Pages
 
 ---
+# Epic 5 – Testing, Debugging & Performance Optimization
+
+## Story 1 – System Testing
+
+### Description
+
+Performed comprehensive system testing to validate the stability, functionality, and reliability of the FinRelief AI platform. Multiple borrower scenarios, loan management workflows, AI service modules, and backend APIs were tested to ensure accurate financial processing and seamless user interaction.
+
+### Features
+
+- Frontend and Backend Integration Testing
+- API Response Validation
+- Financial Profile Testing
+- Loan Management Testing
+- Settlement Prediction Testing
+- AI Negotiation Module Testing
+- Borrower Rights Module Testing
+- Invalid Input Validation
+- Error Scenario Testing
+- Stable System Performance
+
+---
+
+## Story 2 – Backend Error Handling & AI Fallback Management
+
+### Description
+
+Implemented structured exception handling and AI fallback mechanisms to improve backend stability and ensure uninterrupted borrower assistance during API failures and AI service interruptions.
+
+### Features
+
+- Try-Except Exception Handling
+- Gemini API Fallback Mechanism
+- Missing API Key Handling
+- ImportError Handling
+- User-Friendly Error Responses
+- Backend Crash Prevention
+- FastAPI HTTP Exception Handling
+- Stable AI Response Generation
+- Improved Platform Reliability
+
+---
+
+## Story 3 – Performance Optimization & Secure Session Management
+
+### Description
+
+Optimized backend processing, authentication workflows, database communication, and frontend API handling to improve application performance, secure user sessions, and enhance overall platform responsiveness.
+
+### Features
+
+- JWT Token Expiry (120 Minutes)
+- Secure Session Management
+- SQLite Optimization (check_same_thread=False)
+- Axios Request Interceptors
+- Optimized Backend API Responses
+- Database Query Optimization
+- Authentication Workflow Enhancement
+- Reduced Frontend-Backend Latency
+- Concurrent Request Handling
+- Improved Application Performance & Scalability
+
+---
 
 # Project Structure
 
 ```text
-frontend/
+FinRelief-AI/
 │
-├── src/
-│   ├── components/
-│   │   ├── Sidebar.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── StatsCard.jsx
-│   │   ├── LoanTable.jsx
+├── frontend/
 │   │
-│   ├── pages/
-│   │   ├── Dashboard.jsx
-│   │   ├── FinancialHealth.jsx
-│   │   ├── SettlementPredictor.jsx
-│   │   ├── NegotiationEmail.jsx
-│   │   ├── KnowYourRights.jsx
-│   │   └── History.jsx
+│   ├── src/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── StatsCard.jsx
+│   │   │   ├── LoanTable.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── FinancialHealth.jsx
+│   │   │   ├── SettlementPredictor.jsx
+│   │   │   ├── NegotiationEmail.jsx
+│   │   │   ├── KnowYourRights.jsx
+│   │   │   ├── History.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
 │   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
+│   ├── package.json
+│   └── README.md
 │
-├── package.json
-└── README.md
-
-backend/
+├── backend/
+│   │
+│   ├── routers/
+│   │   ├── auth.py
+│   │   ├── profile.py
+│   │   ├── loans.py
+│   │   └── ai.py
+│   │
+│   ├── utils/
+│   │   └── ai_helper.py
+│   │
+│   ├── database.py
+│   ├── app.py
+│   ├── requirements.txt
+│   └── venv/
 │
-├── app.py
-├── requirements.txt
-└── venv/
+├── .gitignore
+├── README.md
+└── LICENSE
 ```
-
----
-
+----
 # Installation
 
 ## Clone Repository
@@ -347,7 +430,11 @@ http://localhost:5173
 
 # Author
 
-**Syed Zainul Abdin**
+**Syed Zainul Abdin--Team Lead**<br>
+**Shaik Aslam -- Member**<br>
+**Otikunta Kavya Sri -- Member**<br> 
+**Rangappagari Dhanush -- Member**<br> 
+**Shaik Adnan -- Member**
 
 B.Tech – Artificial Intelligence & Data Science
 
